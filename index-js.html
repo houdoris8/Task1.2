@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Demonstrations</h2>
+
+    <!-- String Methods -->
+    <h3>String Methods:</h3>
+    <p id="stringMethods"></p>
+
+    <!-- Number Methods -->
+    <h3>Number Methods:</h3>
+    <p id="numberMethods"></p>
+
+    <!-- Array Methods -->
+    <h3>Array Methods:</h3>
+    <p id="arrayMethods"></p>
+
+    <!-- Date Methods -->
+    <h3>Date Methods:</h3>
+    <p id="dateMethods"></p>
+
+    <!-- Function Methods -->
+    <h3>Function Methods:</h3>
+    <p id="functionMethods"></p>
+
+    <script>
+        // String Methods
+        let str = "Hello, World!";
+        let stringResults = "Original: " + str + "<br>";
+        stringResults += "Uppercase: " + str.toUpperCase() + "<br>";
+        stringResults += "Substring (2,7): " + str.substring(2, 7) + "<br>";
+        stringResults += "Replace 'World' with 'JavaScript': " + str.replace("World", "JavaScript") + "<br>";
+        stringResults += "Character at position 4: " + str.charAt(4);
+        document.getElementById("stringMethods").innerHTML = stringResults;
+
+        // Number Methods
+        let num = 123.456789;
+        let numberResults = "Original: " + num + "<br>";
+        numberResults += "Rounded: " + Math.round(num) + "<br>";
+        numberResults += "Ceiling: " + Math.ceil(num) + "<br>";
+        numberResults += "Floor: " + Math.floor(num) + "<br>";
+        numberResults += "Square root: " + Math.sqrt(num);
+        document.getElementById("numberMethods").innerHTML = numberResults;
+
+        // Array Methods
+        let arr = [10, 20, 30, 40, 50];
+        let arrayResults = "Original: " + arr + "<br>";
+        arr.push(60);
+        arrayResults += "After Pushing 60: " + arr + "<br>";
+        arr.pop();
+        arrayResults += "After Popping: " + arr + "<br>";
+        arrayResults += "Reversed: " + arr.reverse() + "<br>";
+        arrayResults += "Joined with '-': " + arr.join('-');
+        document.getElementById("arrayMethods").innerHTML = arrayResults;
+
+        // Date Methods
+        let date = new Date();
+        let dateResults = "Today's Date: " + date + "<br>";
+        dateResults += "Day of the week (0-6): " + date.getDay() + "<br>";
+        dateResults += "Month (0-11): " + date.getMonth() + "<br>";
+        dateResults += "Full Year: " + date.getFullYear() + "<br>";
+        date.setDate(date.getDate() + 5);
+        dateResults += "Date after 5 days: " + date;
+        document.getElementById("dateMethods").innerHTML = dateResults;
+
+        // Function Methods
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+        let functionResults = "Greeting Function: " + greet("Alice") + "<br>";
+        functionResults += "Type of greet function: " + (typeof greet);
+        document.getElementById("functionMethods").innerHTML = functionResults;
+    </script>
+
+</body>
+
+</html>

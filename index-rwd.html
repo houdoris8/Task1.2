@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sample</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Responsive Web Design</h1>
+        <p>This design adjusts based on the screen width. Resize your window or view on different devices to see the
+            changes.</p>
+        <img src="https://via.placeholder.com/800x300" alt="Placeholder Image">
+    </div>
+</body>
+
+</html>
